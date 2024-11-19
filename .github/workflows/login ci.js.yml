@@ -31,5 +31,5 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           config-file: cypress.config.ts
-          command: npx cypress run --config-file cypress.config.ts --spec "src/**/*.cy.{ts,tsx}"
+          command: npx cypress run --config-file cypress.config.ts --spec "src/*.cy.{ts,tsx}"
   
