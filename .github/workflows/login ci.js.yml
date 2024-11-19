@@ -25,8 +25,8 @@ jobs:
     #   - name: Start application
     #     run: npm start &
 
-      - name: Wait for application to be ready
-        run: npx wait-on http://localhost:3000
+    #   - name: Wait for application to be ready
+    #     run: npx wait-on http://localhost:3000
 
       - name: Run Cypress tests
         uses: cypress-io/github-action@v4
