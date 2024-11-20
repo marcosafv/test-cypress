@@ -2,7 +2,6 @@ import Login from './Login'
 
 describe('Login Form', () => {
     beforeEach(() => {
-    //   cy.visit('/') // Asegúrate de que esta ruta coincida con donde hayas montado el componente
     cy.mount(<Login />)
     })
   
