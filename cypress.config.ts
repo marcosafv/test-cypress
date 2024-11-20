@@ -12,6 +12,6 @@ export default defineConfig({
       framework: "create-react-app",
       bundler: "webpack",
     },
-    specPattern: 'src/*.cy.{ts,tsx}',
+    specPattern: 'src/*.cy.tsx',
   },
 });
