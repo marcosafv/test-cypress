@@ -15,8 +15,8 @@ describe('Login Form', () => {
     })
   
     it('should show an error with invalid credentials', () => {
-      cy.get('[data-cy=email-input]').type('wrong@example.com')
-      cy.get('[data-cy=password-input]').type('wrongpassword')
+      cy.get('[data-cy=email-input]').type('wrong@example.com', { delay: 100 })
+      cy.get('[data-cy=password-input]').type('wrongpassword', { delay: 100 })
       cy.get('[data-cy=submit-button]').click()
   
       cy.get('[data-cy=error-message]').should('be.visible')
@@ -25,8 +25,8 @@ describe('Login Form', () => {
     })
   
     it('should login successfully with correct credentials', () => {
-      cy.get('[data-cy=email-input]').type('user@example.com')
-      cy.get('[data-cy=password-input]').type('password123')
+      cy.get('[data-cy=email-input]').type('user@example.com', { delay: 100 })
+      cy.get('[data-cy=password-input]').type('password123', { delay: 100 })
       cy.get('[data-cy=toggle-password-button]').click()
       cy.get('[data-cy=submit-button]').click()
       cy.on('window:alert', (str) => {
